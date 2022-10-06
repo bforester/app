@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace app
+namespace app.Employees
 {
     public class Employees
     {
-        public enum PostList 
+        public enum PostList
         {
             DepartmentHead,
             DepartmentManager,
@@ -25,11 +25,16 @@ namespace app
             SecurityHead,
             SecuritySpecialist
         }
+
+
+
         public string Name { get; set; }
         public PostList Post { get; set; }
         public decimal Salary { get; set; }
         public decimal Gain { get; set; }
         public string Department { get; set; }
+
+        EmployeesCollection<Employees> employees;
 
         public Employees(string name, PostList post, decimal salary, decimal gain)
         {
@@ -37,11 +42,8 @@ namespace app
             Post = post;
             Salary = salary;
             Gain = gain;
+
         }
-       
-
-       
-
 
     }
 }
