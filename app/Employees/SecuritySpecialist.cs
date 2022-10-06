@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace app.Employees
 {
-    internal class SecuritySpecialist : Employees
+    public class SecuritySpecialist : Employees
     {
+        public SecuritySpecialist(string name, PostList post, decimal salary, decimal gain) : base(name, post, salary, gain)
+        {
+        }
     }
 }
