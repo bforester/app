@@ -1,4 +1,5 @@
-﻿using System;
+﻿using app.Department;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace app.Employees
 {
     public class Employees
     {
+
         public enum PostList
         {
             DepartmentHead,
@@ -42,8 +44,10 @@ namespace app.Employees
             Post = post;
             Salary = salary;
             Gain = gain;
-
         }
+
+
+
 
     }
 }
